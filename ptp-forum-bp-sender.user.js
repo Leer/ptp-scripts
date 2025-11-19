@@ -251,7 +251,7 @@ const SendDescription = "Pancakes!";
         if(checkDb != null) {
             alert("You have already paid this post!")
         } else {
-            const message = (e.target.message.value !== "") || (!ForContest) ? e.target.message.value : SendDescription;
+            const message = (!ForContest) || (e.target.message && e.target.message.value !== "") ? e.target.message.value : SendDescription;
             const antiCSRF = document.body.getAttribute('data-anticsrftoken');
             var xhr = new XMLHttpRequest();
             xhr.open("POST", "/bonus.php", true);
