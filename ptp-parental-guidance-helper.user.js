@@ -128,7 +128,9 @@
     method: "POST",
     url: "https://api.graphql.imdb.com",
     headers: {
-      'Content-Type': 'application/json',
+           "Content-Type": "application/json",
+           'x-imdb-client-name': 'imdb-web-next-localized',
+           'x-imdb-user-country': 'US'
     },
     data: JSON.stringify(graphQlReq),
     onload: async function (response) {
