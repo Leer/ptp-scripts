@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         PTP Parental Guidance Helper
 // @namespace    Prism16
-// @version      1.8.1
+// @version      1.8.2
 // @description  Add IMDB Parental Guidance Notes Onto PTP
 // @author       Prism16 - Modified by Ghastly
 // @match        https://passthepopcorn.me/torrents.php*
